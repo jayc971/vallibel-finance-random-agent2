@@ -8,7 +8,7 @@ $today = date('l');
 if (file_exists($image_folder."/".$today.".jpg")) {
  
   header('Location: ' . $image_folder.'/'.$today.'.jpg');
- 
+  die();
 }
  
 else {
