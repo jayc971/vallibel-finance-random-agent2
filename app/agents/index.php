@@ -1,6 +1,6 @@
 <?php
  
-$image_folder = "/app/images/days";
+$image_folder = "images/days";
 
  
 $today = date('l');
