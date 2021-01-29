@@ -1,20 +1,9 @@
 <?php
- 
-$image_folder = "images/days";
 
- 
-$today = date('l');
- 
-if (file_exists($image_folder."/".$today.".jpg")) {
- 
-  header('Location: ' . $image_folder.'/'.$today.'.jpg');
-  die();
-}
- 
-else {
- 
-  echo "No image was found for $today";
- 
-}
- 
-?>
+include 'Router.php';
+
+$request = $_SERVER['REQUEST_URI'];
+$router = new Router($request);
+
+$router->get('/', 'app/home');
+$router->get('post', 'app/post');
