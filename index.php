@@ -7,3 +7,4 @@ $router = new Router($request);
 
 $router->get('/', 'app/agents');
 $router->get('names', 'app/names');
+$router->get('names/white-bkg', 'app/names/white-bkg');
