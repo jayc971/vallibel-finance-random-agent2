@@ -1,9 +1,9 @@
 <?php
 
-if (time() < strtotime('2 pm')) {
-  echo '<script>alert("Welcome to Geeks for Geeks")</script>'; 
+if (time() < strtotime('7 pm')) {
+  echo '<script>alert("7 is not passed")</script>'; 
 }else{
-	echo '<script>alert("Welcome to Geeks for Geeks2")</script>'; 
+	echo '<script>alert("7 is passed")</script>'; 
 }
  
 ?>
